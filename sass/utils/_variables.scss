@@ -1,0 +1,25 @@
+:root {
+    --brand-color: #2196f3;
+    --main-color: #212121;
+    /* txt, hdr, btn */
+    --main-gray-color: #757575;
+    /* p */
+    --background-dark-color: #2f303a;
+    /*order, footer*/
+    --background-gray-color: #f5f4fa;
+    /* team bg, button bg */
+    --white-color: #fff;
+    /* main bg, active txt, logo ftr */
+    --black-color: #000;
+    /* logo hdr*/
+    --footer-contacts-color: rgba(255, 255, 255, 0.6);
+    --header-border-color: #ececec;
+    --portfolio-gallery-border: #EEEEEE;
+    --icon-fill: #AFB1B8;
+    --footer-icons-socialmedia-color: rgba(255, 255, 255, 0.1);
+    --order-gradient: linear-gradient(to bottom,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4));
+    --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-duration: 250ms;
+}
