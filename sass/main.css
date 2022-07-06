@@ -722,12 +722,22 @@ body {
     margin-bottom: 64px;
   }
 }
+@media screen and (max-width: 210px) {
+  .mobile-contacts {
+    margin-bottom: 0px;
+  }
+}
 
 .mobile-social {
   margin-top: 64px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+}
+@media screen and (max-width: 320px) {
+  .mobile-social {
+    margin-top: 0px;
+  }
 }
 .mobile-social__item:not(:last-child) {
   border-right: 1px solid rgba(17, 12, 12, 0.2);
