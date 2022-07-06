@@ -1,4 +1,5 @@
-.customers__title {
+
+.customers-title {
     padding-bottom: 30px;
     font-size: 28px;
     text-align: center;
@@ -7,17 +8,21 @@
 .customers {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     row-gap: 30px;
+    justify-content: space-between;
+    width: 100%;
     list-style: none;
+
+    &__item {
+        width: calc((100% - 30px)/2);
+    }
 
     &__icon {
         display: flex;
-        padding-top: 16px;
-        padding-bottom: 16px;
         justify-content: center;
-        box-sizing: border-box;
-        width: 210px;
+        padding: 16px;
+        box-sizing:border-box;
+        width: 100%;
         height: 92px;
         fill: var(--icon-fill);
         border: 1px solid var(--icon-fill);
@@ -30,8 +35,7 @@
         &:focus {
             fill: var(--brand-color);
             border-color: var(--brand-color);
-        }
-
+        }   
     }
 }
 
@@ -40,10 +44,13 @@
         display: flex;
         justify-content: space-between;
 
+        &__item {
+                width: 170px;
+            }
+
         &__icon {
             width: 170px;
             height: 92px;
-
         }
     }
 }
