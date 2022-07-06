@@ -189,7 +189,7 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
-  z-index: 102;
+  z-index: 1;
 
   @media screen and(min-width: 768px) {
     display: none;  
@@ -223,7 +223,7 @@
 
 .mobile-menu {
   position: fixed;
-  z-index: 100;
+ 
   background-color: var(--white-color);
   top: 0;
   left: 0;
