@@ -87,7 +87,7 @@ body {
 }
 
 .backdrop {
-  z-index: 10;
+  z-index: 199;
   position: fixed;
   top: 0;
   left: 0;
@@ -159,6 +159,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 202;
   padding-left: 1px;
   padding-top: 2px;
 }
@@ -176,7 +177,7 @@ body {
   align-content: center;
   width: 100%;
   height: 100%;
-  z-index: 109;
+  z-index: 204;
 }
 .form__title {
   padding-bottom: 12px;
@@ -483,7 +484,7 @@ body {
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
-  z-index: 1;
+  z-index: 12;
   cursor: pointer;
   border: none;
   background-color: transparent;
