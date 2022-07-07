@@ -483,10 +483,10 @@ body {
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
+  z-index: 1;
   cursor: pointer;
   border: none;
   background-color: transparent;
-  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu__button {
@@ -585,7 +585,16 @@ body {
 .mobile-menu-list__link--current.current {
   color: var(--brand-color);
 }
+@media screen and (max-width: 479px) {
+  .mobile-menu-list__link {
+    font-size: 30px;
+  }
+}
 
+.mobile-contacts {
+  display: flex;
+  flex-direction: column;
+}
 .mobile-contacts__item {
   list-style: none;
 }
@@ -600,6 +609,11 @@ body {
   color: var(--brand-color);
   text-decoration: none;
 }
+@media screen and (max-width: 479px) {
+  .mobile-contacts__telephone {
+    font-size: 24px;
+  }
+}
 .mobile-contacts__email {
   font-weight: 500;
   font-size: 24px;
@@ -609,13 +623,8 @@ body {
   text-decoration: none;
 }
 @media screen and (max-width: 479px) {
-  .mobile-contacts {
-    margin-bottom: 64px;
-  }
-}
-@media screen and (max-width: 210px) {
-  .mobile-contacts {
-    margin-bottom: 0px;
+  .mobile-contacts__email {
+    font-size: 18px;
   }
 }
 
@@ -624,11 +633,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-}
-@media screen and (max-width: 320px) {
-  .mobile-social {
-    margin-top: 0px;
-  }
 }
 .mobile-social__item:not(:last-child) {
   border-right: 1px solid rgba(17, 12, 12, 0.2);
@@ -659,44 +663,39 @@ body {
 .order {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   background-color: var(--dark-background-color);
-  max-width: 1600px;
-  max-height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/order/order-1200.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/order/order-480.jpg");
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .order {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/order/order-1200@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/order/order-480@2x.jpg);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .order {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/order/order-768.jpg");
-    height: 100%;
-    max-width: 100%;
   }
 }
-@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .order {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/order/order-768@2x.jpg");
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .order {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/order/order-480.jpg");
-    max-height: 100%;
-    max-width: 100%;
+    max-width: 1600px;
+    max-height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/order/order-1200.jpg");
   }
 }
-@media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .order {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/order/order-480@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/order/order-1200@2x.jpg");
   }
 }
 .order__container {
