@@ -1073,7 +1073,7 @@ body {
   display: flex;
   list-style: none;
 }
-.footer-socialmedia__item {
+.footer-socialmedia__item:not(:last-child) {
   margin-right: 10px;
 }
 .footer-socialmedia__link {
@@ -1154,6 +1154,13 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .newsletter-form {
+    margin-left: 78px;
+    padding-top: 0px;
+  }
+  .newsletter-form__title {
+    margin-left: 0px;
+  }
   .footer-contact {
     display: flex;
     flex-direction: column;
@@ -1162,7 +1169,6 @@ body {
   .footer-contact__adress {
     width: 246px;
   }
-
   .newsletter {
     display: flex;
     flex-direction: row;
@@ -1171,16 +1177,8 @@ body {
     margin-right: 12px;
     width: 348px;
   }
-
-  .newsletter-form {
-    margin-left: 78px;
-    padding-top: 0px;
-  }
-  .newsletter-form__title {
-    margin-left: 0px;
-  }
-
   .footer-socialmedia {
+    display: flex;
     margin-left: 70px;
     padding-top: 0px;
   }
@@ -1337,7 +1335,6 @@ body {
     width: 370px;
     height: 404px;
   }
-
   .label {
     position: absolute;
     width: 370px;
